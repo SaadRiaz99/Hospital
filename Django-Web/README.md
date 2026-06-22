@@ -5,7 +5,7 @@
 ### 1. GUI Application
 - `indexgui.py` — Desktop GUI for hospital management (Tkinter)
 
-### 2. Django Web Application (merged from Hospital-Web)
+### 2. Django Web Application
 - Full Django web app with patient/doctor/appointment management
 
 ## Setup
@@ -17,6 +17,5 @@ python indexgui.py
 
 ### Django Version
 ```bash
-cd Django-Web/Project
 python manage.py runserver
 ```

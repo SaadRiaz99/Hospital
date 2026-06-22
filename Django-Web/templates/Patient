@@ -1,0 +1,36 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block title %}Patient{% endblock %}
+
+{% block body %}
+<section class="bg-light">
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-sm" style="width: 100%; max-width: 400px;">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Login</h3>
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+          <p class="text-center mt-3">
+            Don't have an account? <a href="#">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+{% endblock body %}

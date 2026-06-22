@@ -1,0 +1,65 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<section class="bg-light">
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-sm" style="width: 100%; max-width: 400px;">
+      <div class="card-body">
+
+        <h3 class="card-title text-center mb-4">Login</h3>
+
+        <form method="POST">
+          {% csrf_token %}
+
+          <!-- Username -->
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="Email" name="email" class="form-control"
+                   placeholder="abc@gmail.com" required>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" name="password"  class="form-control"
+                   placeholder="Enter password" required>
+          </div>
+
+          <!-- Role -->
+          <div class="mb-3">
+            <label class="form-label">Login As</label>
+            <select name="role" class="form-select" required>
+              <option value="">Select Role</option>
+              <option value="patient">Patient</option>
+              <option value="doctor">Doctor</option>
+            </select>
+          </div>
+
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Remember me</label>
+          </div>
+
+          
+          <button type="submit" class="btn btn-primary w-100">
+            Login
+          </button>
+
+          <p class="text-center mt-3">
+            Don't have an account?
+            <a href="/Form.html">Sign Up</a>
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock body %}
+{% comment %} {% url 'signup' %} {% endcomment %}

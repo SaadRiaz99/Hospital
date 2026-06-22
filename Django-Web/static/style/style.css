@@ -1,0 +1,104 @@
+#SlideImage {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    opacity: 0.85;
+}
+/* #SlideImage {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.85;  
+ } */
+
+ 
+ /* 0.1 se 1 tak
+.transparent-navbar {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.transparent-navbar .nav-link,
+.transparent-navbar .navbar-brand {
+    color: #000 !important;
+}
+
+/* Hover effect: Bootstrap primary blue */
+.transparent-navbar .nav-link:hover,
+.transparent-navbar .navbar-brand:hover {
+    color: #0d6efd !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+    color: black !important
+}
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+    color: #0d6efd !important;
+}
+
+
+.dropdown-menu {
+    background-color: white;
+}
+
+
+.navbar-light .navbar-toggler {
+    border-color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+
+}
+.home{
+    background: url("static/photos/Hospital.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    background-position: center;
+}
+.doctor-card img {
+    height: 220px;          
+    object-fit: cover;     
+  }
+
+.doctor-card .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.doctor-card .btn {
+    margin-top: auto;      
+  }
+.card-img-top {
+    height: 220px;        
+    object-fit: cover;  
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+  }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.card-body .btn {
+    margin-top: auto;    
+  }
+
+.card-text {
+    min-height: 72px;    
+  }
+.card-img-top {
+  height: 220px;      
+  object-fit: cover; 
+  width: 100%;
+}  
